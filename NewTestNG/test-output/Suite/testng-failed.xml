@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <parameter name="browser" value="IE"/>
+  <test name="firefox testcases(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="crossBrowserTesting.VerifyTitle">
+        <methods>
+          <include name="verifyPageTitle" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- crossBrowserTesting.VerifyTitle -->
+    </classes>
+  </test> <!-- firefox testcases(failed) -->
+  <test name="IE testcases(failed)" parallel="tests">
+    <parameter name="browser" value="IE"/>
+    <classes>
+      <class name="crossBrowserTesting.VerifyTitle">
+        <methods>
+          <include name="verifyPageTitle" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- crossBrowserTesting.VerifyTitle -->
+    </classes>
+  </test> <!-- IE testcases(failed) -->
+  <test name="chrome testcases(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="crossBrowserTesting.VerifyTitle">
+        <methods>
+          <include name="verifyPageTitle" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- crossBrowserTesting.VerifyTitle -->
+    </classes>
+  </test> <!-- chrome testcases(failed) -->
+</suite> <!-- Failed suite [Suite] -->

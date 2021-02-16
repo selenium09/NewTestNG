@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+ 	<test name="firefox testcases">
+  
+    <parameter name="browser" value="firefox"/>
+	<classes>
+
+	<class name="crossBrowserTesting.VerifyTitle"/>
+
+	</classes> 
+	
+    </test> <!-- Test -->
+    
+    <test name="chrome testcases">
+  
+    <parameter name="browser" value="chrome"/>
+	<classes>
+
+	<class name="crossBrowserTesting.VerifyTitle"/>
+
+	</classes> 
+	
+    </test> <!-- Test -->
+    
+    <test name="IE testcases">
+  
+    <parameter name="browser" value="IE"/>
+	<classes>
+
+	<class name="crossBrowserTesting.VerifyTitle"/>
+
+	</classes> 
+	
+    </test> <!-- Test -->
+</suite> <!-- Suite -->
